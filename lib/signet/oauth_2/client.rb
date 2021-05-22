@@ -286,10 +286,10 @@ module Signet
             @authorization_uri, options
           )
         )
-        if uri.normalized_scheme != "https"
-          raise Signet::UnsafeOperationError,
-                "Authorization endpoint must be protected by TLS."
-        end
+        #if uri.normalized_scheme != "https"
+        #  raise Signet::UnsafeOperationError,
+        #        "Authorization endpoint must be protected by TLS."
+        #end
         uri
       end
 
